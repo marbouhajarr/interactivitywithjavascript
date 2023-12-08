@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script scr=/home/coder/project/undo.js></script>
+    <script scr=/home/coder/project/upDate.js></script>
+    <style>
+    body{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        height: 100vh;
+        margin: 0;
+        background-color: #f0f0f0;
+    }
+   
+   .image-container {
+       text-align: center;
+   }
+
+   img{
+       width: 200px;
+       height: 200px;
+       border-radius: 10px;
+       box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+   }
+
+    </style>
+    <title>two pictures</title>
+
+    </head>
+<body>
+    <div class="image-container" onmouseover="upDate()" onmouseout="undo()">
+        <img src="https://static01.nyt.com/images/2021/09/14/science/07CAT-STRIPES/07CAT-STRIPES-mediumSquareAt3X-v2.jpg" alt="Picture 1">
+        <p>Picture 1</p>
+
+    </div>
+    <div class="image-container" onmouseover="upDate()" onmouseout="undo()">
+        <img src="https://www.alleycat.org/wp-content/uploads/2019/03/FELV-cat.jpg" alt="Picture 2">
+      <p>Picture 2</p>
+    </div>
+</body>
+
+
+
+</html>
